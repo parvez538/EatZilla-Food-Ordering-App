@@ -1,0 +1,702 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*{
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .search {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: gray;
+  }
+  .btn{
+      margin-top: 20px;
+      padding: 15px;
+      font-size: 1.2rem;
+      margin-left: 20px;
+      border-radius: 10px;
+      border: 2px solid black;
+      cursor: pointer;
+  }
+  .Navbar > ul {
+    display: flex;
+    gap: 35px;
+    color: rgba(92, 90, 90, 0.79);
+    margin-top: 15px;
+    margin-right: 550px;
+  }
+  .Navbar > ul :hover {
+    color: orange;
+    cursor: pointer;
+  }
+  .Navbar > ul > li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .Navbar > ul > li > a >  i {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+   
+  }
+  h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-left: 20px;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .RestaurantList {
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 115px;
+  }
+  .cart {
+    width: 250px;
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .img {
+    width: 100%;
+  }
+  .logo {
+    width: 180px;
+    margin-left: 550px
+  }
+  .x {
+    display: flex;
+    justify-content: center;
+    gap: 310px;
+    margin-top: 29px;
+    border-bottom: 1px solid rgb(186, 183, 183);
+    margin-bottom: 15px;
+  }
+  .logoimg {
+    width: 200px;
+  }
+  .header {
+    width: 100%;
+    background-color: rgb(244, 241, 241);
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 730px;
+  }
+  .count {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 1.4rem;
+    margin-right: 202px;
+    margin-left: 130px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .count:hover {
+    color: orange;
+  }
+  .x > ul > li {
+    list-style-type: none;
+    font-size: 0.9rem;
+    color: gray;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+ 
+  .x > ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 200px;
+  }
+  .x > ul > :hover {
+    color: black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+  }
+  .info {
+    color: rgb(133, 132, 132);
+    font-size: 0.8rem;
+    margin-top: 2px;
+    padding: 3px;
+  }
+  .carousals {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(35, 65, 65);
+  }
+  .carousals > img {
+    width: 240px;
+    padding: 15px;
+    margin: 10px;
+  }
+  .carousals > .cr1:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  .carousals > .cr2:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  .carousals > .cr3:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  .carousals > .cr4:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  .cart:hover {
+    box-shadow: 10px 15px 10px -10px rgba(31, 31, 31, 0.5);
+  }
+  .search_bar {
+    display: flex;
+    justify-content: center;
+  }
+  .btn{
+    height: 50px;
+  }
+  .rate{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding: 2px;
+  }
+  
+  .sla{
+    font-size: 0.7rem;
+    color: gray;
+
+  }
+  .cost{
+    font-size: 0.7rem;
+    color: gray;
+
+  }
+  .cart >.name{
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+  
+  }
+  .ratting_red{
+    background-color: rgb(224, 137, 38);
+    width: 35px;
+    padding: 3px;
+    margin: 2px;
+    font-size: 0.7rem;
+    color: white;
+
+  }
+  .ratting_green{
+    background-color: rgb(111, 224, 111);
+    width: 35px;
+    padding: 3px;
+    margin: 2px;
+    font-size: 0.7rem;
+    color: white;
+  }
+  .shimmer{
+    margin-left: 40px;
+  }
+  .no_restaurant{
+    display: flex;
+    justify-content: center;
+  }
+  .login_btn{
+    width: 90px;
+  }
+  .shimmer_container{
+    width: 1500px;
+    margin-top: 100px;
+    margin-left: 130px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .shimmer{
+    width: 240px;
+    height: 200px;
+    margin: 20px;
+    background: rgb(226, 224, 224);
+  
+    border-radius: 5px;
+  }
+  .shimmer_name{
+    margin-top: 110px;
+    margin-left: 20px;
+    width: 200px;
+    height: 45px;
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+  }
+  .shimmer_content{
+    width: 140px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+  }
+  .small_data > ul{
+    list-style: none;
+    display: flex;
+    background-color: rgb(249, 247, 247);
+
+  }
+  .small_list_items{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 85px;
+    gap: 10px;
+    padding: 5px;
+  }
+  .small_data > ul > .small_list_items > li{
+    font-size: 0.8rem;
+  }
+  .small_list_info{
+    color: gray;
+  }
+  .restMenu_img{
+    width: 270px;
+    padding: 30px;
+    margin-left: 110px;
+  }
+  .rest_main_info{
+    margin-left: 220px;
+  }
+  .big_data{
+    display: flex;
+    gap: 30px;
+    background-color: rgb(17, 22, 40);
+  }
+  .rest_menu_name{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 40px;
+  }
+  .rest_menu_cuisines{
+    color: gray;
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+
+  .menu_ratting{
+    color: white;
+    margin-top: 20px;
+  }
+  .total_menu_ratting{
+    margin-top: 10px;
+    color: gray;
+  }
+  .ratting_cost{
+    display: flex;
+  }
+  .menu_timmig{
+    margin-top: 43px;
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 35px;
+  }
+  .menu_timmig_d{
+    margin-top: 10px;
+    color: gray;
+    font-size: 0.8rem;
+    margin-left: 35px;
+  }
+  .menu_cost{
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 25px;
+    margin-top: 22px;
+  }
+  a:link { text-decoration: none; }
+
+  .menu{
+    display: flex;
+    justify-content: center;
+  }
+  .menu_info{
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    height: 180px;
+    margin: 30px;
+    margin-left: 500px;
+    margin-bottom: 5px;
+    padding: 15px;
+    background-color: rgb(248, 248, 248);
+    border-bottom: 1px solid gray;
+   
+  }
+  .menu_list > ul > .menu_info > .menu_item_name_cost li{
+    width: 300px;
+    list-style-type: none;
+    padding: 10px;
+  }
+  .menu_item_img{
+    margin-right: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    margin-top: 15px;
+    box-shadow: 0 2px 7px black;
+  }
+  .menu_item_name{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+  }
+  .menu_item_cost{
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 5px;
+  }
+  .menu_item_desc{
+    width: 350px;
+    font-size: 0.7rem;
+    color: rgb(199, 195, 195);
+    margin: 7px;
+    padding: 5px;
+    letter-spacing: 0.6;
+    line-height : 1.5;
+  }
+  .nonveg_img{
+    width: 15px;
+    margin-left: 10px;
+
+  }
+  .veg_img{
+    width: 15px;
+    margin-left: 10px;
+  }
+  .menu_item_btn{
+    width: 130px;
+    height: 30px;
+    margin-top: 70px;
+    color: rgb(99, 161, 5);
+    text-align: center;
+    background-color: white;
+  }
+  button{
+    text-transform: capitalize;
+
+  }
+ button:hover{
+    color: white;
+    background-color: rgb(99, 161, 5);
+    box-shadow: 0 5px 7px white;
+  }
+  .form_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: gray;
+    margin: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+  }
+  .eatzilla_form{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(174, 211, 241);
+  }
+  .label > label{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5px;
+    padding: 1px;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #label{
+    margin-top: 25px;
+  }
+  input{
+    width: 230px;
+    height: 24px;
+    margin: 4px;
+    padding: 2px;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+    background-color: rgb(235, 230, 230);
+  }
+  .form_btn{
+    width: 75px;
+    margin-left: 80px;
+    background-color: rgb(49, 103, 112);
+   
+  }
+  .menu_search{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+  }
+  .menu_btn{
+    width: 70px;
+    height: 35px;
+    margin-left: 15px;
+
+  }
+  .menu_search >input{
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+  .footer{
+    width: 1750px;
+    height: 600px;
+    background-color: rgb(4, 4, 4);
+  }
+  .footer_info{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-left: 150px;
+    border-bottom: 2px solid rgb(185, 185, 185);
+  }
+  .footer_heading{
+    color: gray;
+    background: transparent;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+  }
+  .footer_small_info{
+    color: rgb(219, 216, 216);
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .footer_small_info:hover{
+    color: rgb(255, 254, 254);
+  
+  }
+  .footer_img_1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .founder{
+    color: white;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .founder_email{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+  }
+  .footer_logo{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 150px;
+    background: transparent;
+  }
+  .footer_img{
+    width: 180px;
+
+  }
+  .footer_social_logo{
+    display: flex;
+  }
+  .footer_facebook{
+    width: 20px;
+    font-size: 1.6rem;
+    margin-right: 25px;
+   
+
+  }
+  .footer_insta{
+    width: 20px;
+    font-size: 1.6rem;
+    margin-right: 25px;
+    
+
+  }
+  .footer_linkedin{
+    width: 20px;
+    font-size: 1.6rem;
+    margin-right: 25px;
+
+  }
+  .footer_youtube{
+    width: 20px;
+    font-size: 1.6rem;
+    margin-right: 25px;
+
+  }
+  .footer_social_logo{
+    padding: 20px;
+  }
+  .footer_head{
+    background: transparent;
+    color: white;
+    font-size: 1.1rem;
+  }
+  .offer_logo{
+    width: 25px;
+  }
+  .offer{
+    width: 1750px;
+    height: 280px;
+    background-color: rgb(44, 66, 100);
+    display: flex;
+  }
+  .offer_image{
+    width: 250px;
+    margin-top: 40px;
+  }
+  .offer_heading{
+    margin-left: 350px;
+    margin-top: 75px
+  }
+  .offer_img{
+    margin-left: 250px;
+  }
+  .h1{
+    font-size: 2.2rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  .h2{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: rgb(218, 216, 216);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+  }
+  .login_btn{
+    width: 95px;
+    font-size: 1rem;
+
+  }
+  .logout_btn{
+    width: 95px;
+    font-size: 1rem;
+  }
+  .help_container{
+    width: 1750px;
+    height: 1100px;
+    background-color: steelblue;
+  }
+  .help_heading{
+    width: 500px;
+    margin-left: 400px;
+    border: 2px solid steelblue;
+
+
+  }
+  .h1_help{
+    font-size: 2.2rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    background: transparent;
+  }
+  .help_content{
+    width: 1200px;
+    height: 900px;
+    margin-left: 320px;
+    margin-top: 45px;
+    background-color: white;
+    display: flex;
+    
+  }
+  .help_side{
+    width: 250px;
+    height: 750px;
+    background-color: rgb(233, 230, 230);
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .side_head{
+    width: 250px;
+    height: 70px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .side_head > h1{
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .side_1{
+    
+    width: 210px;
+    height: 70px;
+    background-color: rgb(233, 230, 230);
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .side_2{
+    
+    width: 210px;
+    height: 70px;
+    background-color: rgb(233, 230, 230);
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .side_1 > h1{
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .side_2 > h1{
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .help_questions{
+    width: 800px;
+    height: 600px;
+    margin-left: 50px;
+    margin-top: 70px;
+  } */
